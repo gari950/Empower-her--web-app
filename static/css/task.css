@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/woman_page.webp);
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(53, 44, 25, 0.5);
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 155px;
+}
+.logo img{
+    width: 80px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.msg-container{
+    width: 600px;
+    height: 280px;
+    position:absolute;
+    left: 3%;
+    top: 57%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#slider{
+    display: inline-flex;
+    transition: 0.5;
+}
+.msg-col{
+    width: 600px;
+    height: 280px;
+}
+.msg-col h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.msg-col h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.msg-col p{
+    color: #ddd;
+    font-size: 20px;
+    line-height: 25px;
+}
+.controller{
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 55%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+#line1,#line2,#line3,#line4{
+    height: 80px;
+    width: 10px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+#active{
+    width: 5px;
+    height: 80px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.5;
+}
