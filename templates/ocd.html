@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> OCD </title>
+        <link rel = "stylesheet" href = "../static/css/ocd.css">
+        <link href = "https://fonts.googleleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel = "stylesheet">
+    </head>
+    <body>
+        <section>
+            <video id="slider" autoplay loop>
+                <source src="../static/video/video3.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation">
+                <li onclick="videoUrl('../static/video/video1.mp4')"><img src="../static/images/thumb1.webp"> </li>
+                <li onclick="videoUrl('../static/video/video2.mp4')"><img src="../static/images/thumb2.png "> </li>
+                <li onclick="videoUrl('../static/video/video3.mp4')"><img src="../static/images/thumb3.webp"> </li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function videoUrl(bla){
+                document.getElementById("slider").src=bla;
+            }
+        </script>
+    </body>
+</html>

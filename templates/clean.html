@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Clean </title>
+        <link rel="stylesheet" type="text/css" href="../static/css/clean.css">
+    </head>
+    <body>
+        <div id="hero">
+            <div class="navbar">
+                <img src="../static/images/Self Aid-logos/ww.png" class="logo">
+                <div class="user">
+                    <button type="button"><a href="/">HOME</a></button>
+                    <img src="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="info">
+                    <h2>HEALTH & HYGIENE</h2>
+                    <p>Hello Warriors!!<br> Aid your mentruation problem and comfort yourself 
+                        into the whole new virtual personalize environment.</br>
+                    </p>
+                    <div class="new">
+                        <button type="button"><span></span><a href="/music">AUDIO</a></button>
+                        <button type="button"><span></span><a href="/ocd">VIDEO</a></button>
+                        <button type="button"><span></span><a href="/book">BOOK</a></button>
+                        <button type="button"><span></span><a href="/calendar">HABITICA</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="../static/images/ocd/left-arrow.png" id="prev">
+                <div class="preview">
+                    <img src="../static/images/ocd/bg6.jpg" class="active thumbnail">
+                    <img src="../static/images/ocd/bg7.jpg" class="thumbnail">
+                    <img src="../static/images/ocd/bg8.jpg" class="thumbnail">
+                    <img src="../static/images/ocd/bg9.jpg" class="thumbnail">
+                    <img src="../static/images/ocd/bg10.jpg" class="thumbnail">
+                </div>
+                <img src="../static/images/ocd/right-arrow.png" id="next">
+            </div>
+        </div>
+        <script>
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            var thumbnail = document.getElementsByClassName("thumbnail");
+            var hero = document.getElementById("hero");
+            var backgroundImg = new Array(
+                "../static/images/ocd/bg6.jpg",
+                "../static/images/ocd/bg7.jpg",
+                "../static/images/ocd/bg8.jpg",
+                "../static/images/ocd/bg9.jpg",
+                "../static/images/ocd/bg10.jpg",
+            );
+            let i=0;
+            next.onclick = function(){
+                if(i<4){
+                    hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+                    thumbnail[i+1].classList.add("active");
+                    thumbnail[i].classList.remove("active");
+                    i++; 
+                }
+            }
+            prev.onclick = function(){
+                if(i>0){
+                    hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                    thumbnail[i-1].classList.add("active");
+                    thumbnail[i].classList.remove("active");
+                    i--; 
+                }
+            }
+        </script>
+    </body>
+</html>
