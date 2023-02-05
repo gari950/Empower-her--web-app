@@ -6,15 +6,15 @@ This website is a part of my Community connect project, the idea was to make a w
 
 # Features
 
-*Chatbot
+* Chatbot
 
  You can chat with Radha,our chatbot for faqs, general questions
  
-*Resource center
+* Resource center
 
  This web app provides various resources including audio, video, articles, everything accumulated at one site for the ease of searching. You'll find everything in the resource center.
  
-*Language friendly
+* Language friendly
 
 You can access our website in two languages, hindi as well as english
 
