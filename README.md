@@ -7,18 +7,23 @@ This website is a part of my Community connect project, the idea was to make a w
 # Features
 
 * Chatbot
+ 
  You can chat with Radha,our chatbot for faqs, general questions
  
 * Resource center
+ 
  This web app provides various resources including audio, video, articles, everything accumulated at one site for the ease of searching. You'll find everything in the resource center.
  
 * Language friendly
+
 You can access our website in two languages, hindi as well as english
 
 # Tech used
 
 1.Frontend: Html, css, javascript
+
 2.Backend: Python
+
 3.Framework: Flask
 
 #Screenshots
